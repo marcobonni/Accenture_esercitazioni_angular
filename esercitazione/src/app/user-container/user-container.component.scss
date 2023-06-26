@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+.user-container {
+    background-color: #dae8fc;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    .user-container-head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .user-container-body {
+        display: flex;
+        justify-content: space-around;
+    }
+    app-user-list  {
+        max-width: 30%;
+        height: 100%;
+    }
+    app-user-detail {
+        max-width: 35%;
+        height: 100%;
+    }
+}

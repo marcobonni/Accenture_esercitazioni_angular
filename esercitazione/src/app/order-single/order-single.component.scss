@@ -1,0 +1,10 @@
+.order-single {
+    background-color: #bac8d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .order-single-container {
+        display: flex;
+    }
+}

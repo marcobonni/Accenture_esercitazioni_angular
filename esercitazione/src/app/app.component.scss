@@ -1,0 +1,18 @@
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .container-wrapper {
+        display: flex;
+        // align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        app-user-container, app-order-container {
+            width: 45%;
+            height: 80vh;
+        }
+    }
+}
