@@ -5,8 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './user-detail.component.html',
   styleUrls: ['./user-detail.component.scss']
 })
-export class UserDetailComponent implements OnInit {
 
+interface isUserInfo {
+  id: string;
+
+}
+export class UserDetailComponent implements OnInit {
+   user_info : any  = {
+    id : 
+  }
   constructor() { }
 
   ngOnInit(): void {
