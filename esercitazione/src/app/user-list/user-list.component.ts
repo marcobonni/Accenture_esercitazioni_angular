@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-list.component.scss']
 })
 export class UserListComponent implements OnInit {
-  user = [
+  users = [
     {
         id: 3487,
         name: 'Mario',
@@ -57,6 +57,11 @@ export class UserListComponent implements OnInit {
         gender: "FEMALE"
       }
   ];
+
+  removeUser(userId : number) {
+    this.users = this.users.filter(user => user.id!== userId);
+  }
+
   constructor() { }
 
   ngOnInit(): void {
