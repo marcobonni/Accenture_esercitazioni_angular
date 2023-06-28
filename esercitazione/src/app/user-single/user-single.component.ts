@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user-single',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-single.component.scss']
 })
 export class UserSingleComponent implements OnInit {
-
+  @Input() items : any;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,1 +1,10 @@
-<h3 class="user-single-component">user-single.component</h3>
+<ol class="user-single-component">
+  <li *ngFor="let item of items">
+    <h4>
+      <img src="{{ item.profilePhotoUrl }}" alt="{{ item.name }}" /><span
+        >{{ item.name }} {{ item.surname }}</span
+      >
+      {{ item.age }} {{ item.address.city }}
+    </h4>
+  </li>
+</ol>

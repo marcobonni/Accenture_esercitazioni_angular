@@ -1,12 +1,6 @@
 <div class="user-list">
   <h3>user-list.component</h3>
   <ol>
-    <li *ngFor="let item of user">
-      <h4>
-        <img src="{{ item.profilePhotoUrl }}" /><span
-          >{{ item.name }} {{ item.surname }}</span
-        > {{item.age}} {{item.address.city}}
-      </h4>
-    </li>
+    <app-user-single [items]="user"></app-user-single>
   </ol>
 </div>
