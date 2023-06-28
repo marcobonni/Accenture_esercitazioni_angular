@@ -1,3 +1,18 @@
 <div class="user-detail">
     <h3>user-detail.component</h3>
+    <h3>id : {{user.id}}</h3>
+    <h3>Name : {{user.name}}</h3>
+    <h3>Surname : {{user.surname}}</h3>
+    <h3>Age : {{user.age}}</h3>
+    <h3>Date of birth: {{user.dateOfBirth | date: 'dd/MM/yyyy'}}</h3>
+    <h3><b>Address:</b></h3>
+    <h3>City : {{user.address.city}}</h3>
+    <h3>Street : {{user.address.street}}</h3>
+    <h3>PostalCode : {{user.address.postalCode}}</h3>
+    <h3>Role : {{user.role}}</h3>
+    <h3>username: {{user.username}}</h3>
+    <img src={{user.img_url}} alt={{user.name}}/>
+    <h3>Gender : {{user.gender}}</h3>
+    <h3>Company : {{user.company.name}}</h3>
+    <h3>Company : {{user.company.description}}</h3>
 </div>
