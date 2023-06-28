@@ -2,7 +2,7 @@
     background-color: #d5e8d4;
     height: 100%;
     width: 150%;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,5 +11,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    img {
+       max-height: 4rem;
+       aspect-ratio: 1 / 1;
+       object-fit: cover;
     }
 }
