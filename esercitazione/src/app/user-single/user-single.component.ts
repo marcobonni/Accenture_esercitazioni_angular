@@ -6,15 +6,16 @@ import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
   styleUrls: ['./user-single.component.scss']
 })
 export class UserSingleComponent implements OnInit {
-  @Input() item : any;
-  @Output() removeItem: EventEmitter<number> = new EventEmitter<number>();  
+  @Input() user : any;
+  @Output() removeUser = new EventEmitter<any>(); 
+  
+  removeItem() {
+    this.removeUser.emit(this.user);
+  }
   constructor() { }
 
   ngOnInit(): void {
   }
-  removeUser() {
-    console.log("function called"); 
-    this.removeItem.emit(this.item.id);
-  }
+  
 
 }

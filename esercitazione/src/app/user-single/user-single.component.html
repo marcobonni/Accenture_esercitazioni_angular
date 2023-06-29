@@ -1,13 +1,9 @@
-<ol class="user-single-component">
-  <li *ngFor="let item of items">
-    <!-- //content of the user -->
-    <h4>
-      <img src="{{ item.profilePhotoUrl }}" alt="{{ item.name }}" /><span
-        >{{ item.name }} {{ item.surname }}</span
-      >
-      {{ item.age }} {{ item.address.city }}
-    </h4>
-    <!-- //remove Button -->
-    <button (click)="removeUser()">Remove</button>
-  </li>
-</ol>
+<li>
+  <h4>
+    <img src="{{ user.profilePhotoUrl }}" alt="{{ user.name }}" /><span
+      >{{ user.name }} {{ user.surname }}</span
+    >
+    {{ user.age }} {{ user.address.city }}
+  </h4>
+  <button (click)="removeItem()">Remove</button>
+</li>

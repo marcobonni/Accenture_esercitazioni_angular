@@ -1,6 +1,8 @@
 <div class="user-list">
   <h3>user-list.component</h3>
   <ol>
-    <app-user-single  *ngFor="let user of users"  [items]="users" (removeItem)="removeUser($event)"></app-user-single>
+    <li *ngFor="let user of users">
+      <app-user-single [user]="user" (removeUser)="removeUser($event)"></app-user-single>
+    </li>
   </ol>
 </div>

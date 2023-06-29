@@ -58,8 +58,11 @@ export class UserListComponent implements OnInit {
       }
   ];
 
-  removeUser(userId : number) {
-    this.users = this.users.filter(user => user.id!== userId);
+  removeUser(user : any) {
+    const index = this.users.indexOf(user);
+    if (index !== -1) {
+      this.users.splice(index, 1);
+    }
   }
 
   constructor() { }
