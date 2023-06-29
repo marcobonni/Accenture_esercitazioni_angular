@@ -1,8 +1,9 @@
 <div class="user-list">
   <h3>user-list.component</h3>
-  <ol>
+  <ol *ngIf="users.length > 0">
     <li *ngFor="let user of users">
       <app-user-single [user]="user" (removeUser)="removeUser($event)"></app-user-single>
     </li>
   </ol>
+  <p *ngIf="users.length === 0">Non sono presenti utenti </p>
 </div>
