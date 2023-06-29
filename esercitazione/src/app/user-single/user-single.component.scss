@@ -1,4 +1,12 @@
-
+.admin {
+    border: 1px solid red;
+}
+.manager {
+    border: 1px solid green;
+}
+.staff {
+    border:1px solid blue;
+}
     img {
         max-height: 4rem;
         aspect-ratio: 1 / 1;

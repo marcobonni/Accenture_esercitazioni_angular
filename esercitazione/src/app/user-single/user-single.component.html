@@ -1,4 +1,4 @@
-<li>
+<li [ngClass] = "{ 'admin' : user.role === 'ADMIN', 'staff' : user.role === 'STAFF', 'manager' : user.role === 'MANAGER'}">
   <h4>
     <img src="{{ user.profilePhotoUrl }}" alt="{{ user.name }}" /><span
       >{{ user.name }} {{ user.surname }}</span
